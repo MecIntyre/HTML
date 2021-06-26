@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Mit HTML auf Reise</title>  
+<link href="style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body> 
+
+<header>
+<h1>Stadt, Land, Fluss</h1>
+</header>
+
+<nav>
+<ul>
+<li><a href="staedte/berlin.html">Berlin</a></li>
+<li><a href="staedte/hamburg.html">Hamburg</a></li>
+<li><a href="staedte/muenchen.html">München</a></li>
+</ul>
+</nav>
+
+<section>
+<h2>Wohin möchten Sie reisen?</h2>
+<p>
+<form action="http://www.cs.tut.fi/cgi-bin/run/~jkorpela/echo.cgi" method="post" enctype="application/x-www-form-urlencoded">
+<fieldset>
+    <legend>Persönliche Daten:</legend>
+	<br>
+    <label for="vor">Vorname:</label><br>
+    <input type="text" name="vorname" id="vor">
+    <br>
+    <label for="nach">Nachname:</label><br>
+    <input type="text" name="name"  id="nach">
+	<br>
+    <label for="mail">E Mail:</label><br>
+    <input type="email" name="mail" id="mail">
+    <br>
+    <label for="fest">Telefon:</label><br>
+    <input type="number" name="festnetz" id="fest">
+
+</fieldset>
+	<br>
+<fieldset>
+    <legend>Ihre Reiseziele:</legend>
+	<br>
+    <label for="ziel">Wählen Sie:</label><br>
+    <select name="Reiseziel" id="ziel">
+    <option value="Berlin">Berlin</Berlin</option>
+    <option value="Hamburg">Hamburg</Berlin</option>
+    <option value="Muenchen">München</Berlin</option>
+	</select>
+
+</fieldset>
+	<br>
+<fieldset>
+    <legend>Ihre Anmerkungen:</legend>
+	<br>
+    <label for="message">Schreiben Sie uns:</label><br>
+    <textarea name="Nachricht" id="message"></textarea>
+	<br>
+</fieldset>
+<br>
+    <input type="submit" value="Absenden"><br>
+	<input type="reset" value="Eingabe löschen"><br>
+
+</form>
+</p>
+</section>
+
+<footer>
+Copyright @ ich selbst
+<address>Planet Erde</address>
+</footer>
+
+</body>
+</html>
